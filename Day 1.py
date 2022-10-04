@@ -1,0 +1,1 @@
+print('La cerveza se llama\n"'+(input("¿Que tiene superman?")) + " "+(input("¿Como te gusta la cerveza?"))+'"')
