@@ -1,2 +1,17 @@
-frase = "Si la implementación es difícil de explicar, puede que sea una mala idea." 
-print(frase.replace("difícil","fácil").replace("mala", "buena"))
+texto = input("Ingrese el texto que desea analizar:")
+primera_letra = input("Ingrese primera letra:")
+segunda_letra = input("Ingrese segunda letra:")
+tercera_letra = input("Ingrese tercera letra:")
+print(f"La letra {primera_letra} aparece {texto.lower().count(primera_letra.lower())} veces")
+print(f"La letra {segunda_letra} aparece {texto.lower().count(segunda_letra.lower())} veces")
+print(f"La letra {tercera_letra} aparece {texto.lower().count(tercera_letra.lower())} veces")
+cantidad_palabras=texto.split()
+print(f"Hay {len(cantidad_palabras)} palabras en el texto ingresado")
+print(f"La primera letra es {texto[0]}")
+print(f"La ultima letra es {texto[-1]}")
+print(type(cantidad_palabras))
+print(cantidad_palabras.reverse())
+texto_inverso=" ".join(cantidad_palabras.reverse())
+
+
+print(f"El texto al reves queda asi: {texto_inverso}")
